@@ -1,0 +1,34 @@
+{
+  "event": {
+    "type": "create_pulse",
+    "boardId": 1100000001,
+    "boardName": "Report Intake Board",
+    "itemId": 2200000001,
+    "pulseName": "Cash Flow Summary Report",
+    "userId": 3300000001,
+    "triggerTime": "2024-11-15T09:14:22.000Z"
+  },
+  "item": {
+    "id": "2200000001",
+    "name": "Cash Flow Summary Report",
+    "group": {
+      "id": "new_submissions",
+      "title": "New Submissions"
+    },
+    "column_values": [
+      { "id": "request_type",        "text": "New Report",       "value": "{\"label\": \"New Report\"}" },
+      { "id": "requestor",           "text": "Jane Doe",         "value": "{\"personsAndTeams\": [{\"id\": 3300000001, \"kind\": \"person\"}]}" },
+      { "id": "business_owner",      "text": "Finance Director",  "value": "{\"personsAndTeams\": [{\"id\": 3300000002, \"kind\": \"person\"}]}" },
+      { "id": "source_dataset",      "text": "Finance",          "value": "{\"label\": \"Finance\"}" },
+      { "id": "priority",            "text": "High",             "value": "{\"label\": \"High\"}" },
+      { "id": "expected_user_count", "text": "12",               "value": "12" },
+      { "id": "intake_review_status","text": "Pending",          "value": "{\"label\": \"Pending\"}" },
+      { "id": "submission_date",     "text": "2024-11-15",       "value": "{\"date\": \"2024-11-15\"}" },
+      { "id": "use_case",            "text": "Monthly cash flow reporting for CFO review. Currently produced manually in Excel. Requires GL actuals vs forecast by cost center, filtered by region.", "value": "\"Monthly cash flow reporting for CFO review...\"" }
+    ]
+  },
+  "meta": {
+    "webhookId": "9900000001",
+    "subscriptionId": "8800000001"
+  }
+}

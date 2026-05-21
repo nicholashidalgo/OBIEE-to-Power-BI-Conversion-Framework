@@ -1,0 +1,56 @@
+{
+  "event": {
+    "type": "change_column_value",
+    "boardId": 1100000004,
+    "boardName": "Change Approval Board",
+    "itemId": 2200000088,
+    "pulseName": "RLS Role Update: Risk Regional West Dissolution",
+    "userId": 3300000010,
+    "triggerTime": "2024-11-15T17:41:09.000Z",
+    "columnId": "tier_3_status",
+    "columnTitle": "Tier 3 Status"
+  },
+  "item": {
+    "id": "2200000088",
+    "name": "RLS Role Update: Risk Regional West Dissolution",
+    "group": {
+      "id": "approved_pending_deployment",
+      "title": "Approved - Pending Deployment"
+    }
+  },
+  "change": {
+    "column_id": "tier_3_status",
+    "previous_value": { "label": "Pending" },
+    "new_value": { "label": "Approved" }
+  },
+  "approval_summary": {
+    "tier_1_status": "Approved",
+    "tier_1_approver": "Platform Team Lead",
+    "tier_1_approved_at": "2024-11-15T10:15:00.000Z",
+    "tier_2_status": "Approved",
+    "tier_2_approver": "Risk Dataset Owner",
+    "tier_2_approved_at": "2024-11-15T14:30:00.000Z",
+    "tier_3_status": "Approved",
+    "tier_3_approver": "Security Reviewer",
+    "tier_3_approved_at": "2024-11-15T17:41:09.000Z"
+  },
+  "gate_transition": {
+    "previous_gate_status": "Held",
+    "new_gate_status": "Released",
+    "gate_released_at": "2024-11-15T17:41:09.000Z",
+    "released_by": "automation"
+  },
+  "deployment_context": {
+    "change_type": "RLS Role Change",
+    "approval_tier": "Tier 3",
+    "affected_datasets": "Risk",
+    "affected_reports": ["Risk Operational Summary", "Credit Exposure Detail"],
+    "affected_user_count": 14,
+    "requested_deploy_date": "2024-11-16",
+    "rollback_plan": "Restore Risk_Regional_West role in rls_implementation.sql and redeploy. Re-assign affected users to prior role in Power BI Service."
+  },
+  "meta": {
+    "webhookId": "9900000005",
+    "subscriptionId": "8800000005"
+  }
+}

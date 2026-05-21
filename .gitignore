@@ -10,3 +10,9 @@ __pycache__/
 *.pbit
 .pytest_cache/
 .coverage
+
+# Build and runtime artifacts
+logs/
+target/
+dbt_packages/
+*.duckdb

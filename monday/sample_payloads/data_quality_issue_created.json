@@ -1,0 +1,46 @@
+{
+  "event": {
+    "type": "create_pulse",
+    "boardId": 1100000003,
+    "boardName": "Data Quality Issue Board",
+    "itemId": 2200000072,
+    "pulseName": "AR Aging Detail -- Record Count Variance 2.3%",
+    "userId": 0,
+    "triggerTime": "2024-11-15T06:02:15.000Z",
+    "source": "automated_validation_runner"
+  },
+  "item": {
+    "id": "2200000072",
+    "name": "AR Aging Detail -- Record Count Variance 2.3%",
+    "group": {
+      "id": "high_open",
+      "title": "High (open)"
+    },
+    "column_values": [
+      { "id": "detection_source",      "text": "Validation Run",    "value": "{\"label\": \"Validation Run\"}" },
+      { "id": "affected_dataset",      "text": "Finance",           "value": "{\"label\": \"Finance\"}" },
+      { "id": "affected_reports",      "text": "AR Aging Detail",   "value": "\"AR Aging Detail\"" },
+      { "id": "severity",              "text": "High",              "value": "{\"label\": \"High\"}" },
+      { "id": "root_cause_category",   "text": "Source Data",       "value": "{\"label\": \"Source Data\"}" },
+      { "id": "status",                "text": "Open",              "value": "{\"label\": \"Open\"}" },
+      { "id": "detection_date",        "text": "2024-11-15",        "value": "{\"date\": \"2024-11-15\"}" },
+      { "id": "business_owner_signoff","text": "Not Required",      "value": "{\"label\": \"Not Required\"}" }
+    ]
+  },
+  "validation_context": {
+    "check_type": "record_count",
+    "dataset": "Finance",
+    "report_name": "AR Aging Detail",
+    "obiee_row_count": 48213,
+    "powerbi_row_count": 47110,
+    "variance_pct": 2.3,
+    "threshold_pct": 1.0,
+    "run_timestamp": "2024-11-15T06:01:48.000Z",
+    "runner_script": "scripts/run_validation.py",
+    "sql_check": "sql/validation/record_count_comparison.sql"
+  },
+  "meta": {
+    "webhookId": "9900000003",
+    "subscriptionId": "8800000003"
+  }
+}

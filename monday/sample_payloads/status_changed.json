@@ -1,0 +1,40 @@
+{
+  "event": {
+    "type": "change_column_value",
+    "boardId": 1100000002,
+    "boardName": "Migration Status Board",
+    "itemId": 2200000045,
+    "pulseName": "AR Aging Detail",
+    "userId": 3300000005,
+    "triggerTime": "2024-11-15T14:22:10.000Z",
+    "columnId": "migration_status",
+    "columnTitle": "Migration Status"
+  },
+  "item": {
+    "id": "2200000045",
+    "name": "AR Aging Detail",
+    "group": {
+      "id": "finance_dataset",
+      "title": "Finance Dataset"
+    }
+  },
+  "previousValue": {
+    "label": "In Progress",
+    "labelStyle": { "color": "#fdbc64", "border": "#e99729" }
+  },
+  "value": {
+    "label": "Validation",
+    "labelStyle": { "color": "#9cd326", "border": "#5eae2b" }
+  },
+  "context": {
+    "changedAt": "2024-11-15T14:22:10.000Z",
+    "changedBy": {
+      "id": "3300000005",
+      "name": "Platform Team Member"
+    }
+  },
+  "meta": {
+    "webhookId": "9900000002",
+    "subscriptionId": "8800000002"
+  }
+}

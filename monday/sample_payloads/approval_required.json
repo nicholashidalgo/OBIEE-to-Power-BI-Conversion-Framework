@@ -1,0 +1,46 @@
+{
+  "event": {
+    "type": "change_column_value",
+    "boardId": 1100000004,
+    "boardName": "Change Approval Board",
+    "itemId": 2200000088,
+    "pulseName": "RLS Role Update: Risk Regional West Dissolution",
+    "userId": 3300000007,
+    "triggerTime": "2024-11-15T16:05:33.000Z",
+    "columnId": "tier_3_approver",
+    "columnTitle": "Tier 3 Approver"
+  },
+  "item": {
+    "id": "2200000088",
+    "name": "RLS Role Update: Risk Regional West Dissolution",
+    "group": {
+      "id": "awaiting_tier3_approval",
+      "title": "Awaiting Tier 3 Approval"
+    }
+  },
+  "change": {
+    "column_id": "tier_3_approver",
+    "previous_value": null,
+    "new_value": {
+      "personsAndTeams": [
+        { "id": 3300000010, "kind": "person", "name": "Security Reviewer" }
+      ]
+    }
+  },
+  "approval_context": {
+    "change_type": "RLS Role Change",
+    "approval_tier": "Tier 3",
+    "deployment_gate": "Held",
+    "tier_1_status": "Approved",
+    "tier_2_status": "Approved",
+    "tier_3_status": "Pending",
+    "affected_datasets": "Risk",
+    "affected_reports": ["Risk Operational Summary", "Credit Exposure Detail"],
+    "affected_user_count": 14,
+    "change_description": "Remove Risk_Regional_West role. Reassign 14 affected users to Risk_ReadOnly pending org restructure completion."
+  },
+  "meta": {
+    "webhookId": "9900000004",
+    "subscriptionId": "8800000004"
+  }
+}
