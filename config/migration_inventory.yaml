@@ -1,86 +1,1732 @@
+# Synthetic sample inventory.
+# Contains 240 executable report records for demonstration of the migration framework.
+# No employer, client, customer, or private report data is included.
 reports:
-  - name: GL Journal Detail
-    subject_area: Finance - GL
-    target_dataset: Finance
-    status: migrated
-    owner: FP&A
-    priority: high
-    validation_status: passed
-
-  - name: GL Trial Balance
-    subject_area: Finance - GL
-    target_dataset: Finance
-    status: migrated
-    owner: FP&A
-    priority: high
-    validation_status: passed
-
-  - name: AP Vendor Summary
-    subject_area: Finance - AP
-    target_dataset: Finance
-    status: migrated
-    owner: AP Team
-    priority: medium
-    validation_status: passed_with_notes
-    notes: "Count variance 1.3% due to reversed entries in OBIEE. PBI is correct."
-
-  - name: AR Aging Report
-    subject_area: Finance - AR
-    target_dataset: Finance
-    status: migrated
-    owner: AR Team
-    priority: high
-    validation_status: passed
-
-  - name: Budget vs Actual
-    subject_area: Finance - Budget
-    target_dataset: Finance
-    status: migrated
-    owner: FP&A
-    priority: high
-    validation_status: passed
-
-  - name: Credit Risk Dashboard
-    subject_area: Risk - Credit
-    target_dataset: Risk
-    status: migrated
-    owner: Risk Team
-    priority: high
-    validation_status: passed
-
-  - name: Operational Risk Log
-    subject_area: Risk - Operational
-    target_dataset: Risk
-    status: migrated
-    owner: Risk Team
-    priority: medium
-    validation_status: passed
-
-  - name: Inventory Position
-    subject_area: Operations - Inventory
-    target_dataset: Operations
-    status: migrated
-    owner: Supply Chain
-    priority: high
-    validation_status: passed
-
-  - name: Shipping Performance
-    subject_area: Operations - Shipping
-    target_dataset: Operations
-    status: migrated
-    owner: Logistics
-    priority: medium
-    validation_status: passed
-
-  - name: Production Quality Log
-    subject_area: Operations - Quality
-    target_dataset: Operations
-    status: migrated
-    owner: Quality
-    priority: medium
-    validation_status: passed_with_notes
-    notes: "Count variance 1.8% due to hardcoded date filter in OBIEE."
-
-# Remaining 230 reports follow the same pattern.
-# This sample shows the structure for 10 representative reports.
-# Full inventory maintained in the project management tracker.
+- name: Finance Close Variance 001
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Revenue by Customer 002
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Gross Margin Trend 003
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Operating Expense Detail 004
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Budget vs Actual 005
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 006
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 007
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Backlog Aging 008
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Operations Throughput 009
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Service Performance 010
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Gross Margin Trend 011
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Operating Expense Detail 012
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Budget vs Actual 013
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Customer Profitability 014
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Sales Ledger Reconciliation 015
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 016
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 017
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Service Performance 018
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Inventory Movement 019
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Fulfillment Cycle Time 020
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Budget vs Actual 021
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Customer Profitability 022
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Sales Ledger Reconciliation 023
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Working Capital Summary 024
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Finance Close Variance 025
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 026
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 027
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Fulfillment Cycle Time 028
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Capacity Utilization 029
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Exception Queue 030
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Sales Ledger Reconciliation 031
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Working Capital Summary 032
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Finance Close Variance 033
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Revenue by Customer 034
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Gross Margin Trend 035
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 036
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 037
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Queue 038
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Regional Performance 039
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Backlog Aging 040
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Finance Close Variance 041
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Revenue by Customer 042
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Gross Margin Trend 043
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Operating Expense Detail 044
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Budget vs Actual 045
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 046
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 047
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Backlog Aging 048
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Operations Throughput 049
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Service Performance 050
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Gross Margin Trend 051
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Operating Expense Detail 052
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Budget vs Actual 053
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Customer Profitability 054
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Sales Ledger Reconciliation 055
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 056
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 057
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Service Performance 058
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Inventory Movement 059
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Fulfillment Cycle Time 060
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Budget vs Actual 061
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Customer Profitability 062
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Sales Ledger Reconciliation 063
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Working Capital Summary 064
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Finance Close Variance 065
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 066
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 067
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Fulfillment Cycle Time 068
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Capacity Utilization 069
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Exception Queue 070
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Sales Ledger Reconciliation 071
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Working Capital Summary 072
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Finance Close Variance 073
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Revenue by Customer 074
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Gross Margin Trend 075
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 076
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 077
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Exception Queue 078
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Regional Performance 079
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Backlog Aging 080
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Finance Close Variance 081
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Revenue by Customer 082
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Gross Margin Trend 083
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Operating Expense Detail 084
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Budget vs Actual 085
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 086
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 087
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Backlog Aging 088
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Operations Throughput 089
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Service Performance 090
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Gross Margin Trend 091
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Operating Expense Detail 092
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Budget vs Actual 093
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Customer Profitability 094
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Sales Ledger Reconciliation 095
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 096
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 097
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Service Performance 098
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Inventory Movement 099
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Fulfillment Cycle Time 100
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Budget vs Actual 101
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Customer Profitability 102
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Sales Ledger Reconciliation 103
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Working Capital Summary 104
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Finance Close Variance 105
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 106
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 107
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Fulfillment Cycle Time 108
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Capacity Utilization 109
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Queue 110
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Sales Ledger Reconciliation 111
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Working Capital Summary 112
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Finance Close Variance 113
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Revenue by Customer 114
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Gross Margin Trend 115
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 116
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 117
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Exception Queue 118
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Regional Performance 119
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Backlog Aging 120
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Finance Close Variance 121
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Revenue by Customer 122
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Gross Margin Trend 123
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Operating Expense Detail 124
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Budget vs Actual 125
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 126
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 127
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Backlog Aging 128
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Operations Throughput 129
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Service Performance 130
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Gross Margin Trend 131
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Operating Expense Detail 132
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Budget vs Actual 133
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Customer Profitability 134
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Sales Ledger Reconciliation 135
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 136
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 137
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Service Performance 138
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Inventory Movement 139
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Fulfillment Cycle Time 140
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Budget vs Actual 141
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Customer Profitability 142
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Sales Ledger Reconciliation 143
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Working Capital Summary 144
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Finance Close Variance 145
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 146
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 147
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Fulfillment Cycle Time 148
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Capacity Utilization 149
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Exception Queue 150
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Sales Ledger Reconciliation 151
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Working Capital Summary 152
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Finance Close Variance 153
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Revenue by Customer 154
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Gross Margin Trend 155
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 156
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 157
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Queue 158
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Regional Performance 159
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Backlog Aging 160
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Finance Close Variance 161
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Revenue by Customer 162
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Gross Margin Trend 163
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Operating Expense Detail 164
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Budget vs Actual 165
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 166
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 167
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Backlog Aging 168
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Operations Throughput 169
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Service Performance 170
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Gross Margin Trend 171
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Operating Expense Detail 172
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Budget vs Actual 173
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Customer Profitability 174
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Sales Ledger Reconciliation 175
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 176
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 177
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Service Performance 178
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Inventory Movement 179
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Fulfillment Cycle Time 180
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Budget vs Actual 181
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Customer Profitability 182
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Sales Ledger Reconciliation 183
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Working Capital Summary 184
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Finance Close Variance 185
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 186
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 187
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Fulfillment Cycle Time 188
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Capacity Utilization 189
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Exception Queue 190
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Sales Ledger Reconciliation 191
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Working Capital Summary 192
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Finance Close Variance 193
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Revenue by Customer 194
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Gross Margin Trend 195
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 196
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 197
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Exception Queue 198
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Regional Performance 199
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Backlog Aging 200
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Finance Close Variance 201
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Revenue by Customer 202
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Gross Margin Trend 203
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Operating Expense Detail 204
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Budget vs Actual 205
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 206
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 207
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Backlog Aging 208
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Operations Throughput 209
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Service Performance 210
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Gross Margin Trend 211
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Operating Expense Detail 212
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Budget vs Actual 213
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Customer Profitability 214
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Sales Ledger Reconciliation 215
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Security Access Review 216
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Risk Exposure Summary 217
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Service Performance 218
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Inventory Movement 219
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Fulfillment Cycle Time 220
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Budget vs Actual 221
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Customer Profitability 222
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Sales Ledger Reconciliation 223
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Working Capital Summary 224
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Finance Close Variance 225
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Aging Risk Detail 226
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: High
+  validation_status: passed
+- name: Threshold Breach Summary 227
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Fulfillment Cycle Time 228
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed
+- name: Capacity Utilization 229
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Queue 230
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
+- name: Sales Ledger Reconciliation 231
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Working Capital Summary 232
+  subject_area: Finance - GL
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Finance Close Variance 233
+  subject_area: Finance - AP
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Medium
+  validation_status: passed_with_notes
+  notes: Count variance 1.3% due to reversed entries in OBIEE. PBI is correct.
+- name: Revenue by Customer 234
+  subject_area: Finance - AR
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: Low
+  validation_status: passed
+- name: Gross Margin Trend 235
+  subject_area: Finance - Budget
+  target_dataset: Finance
+  status: migrated
+  owner: Finance Data Owner
+  priority: High
+  validation_status: passed
+- name: Exception Monitoring 236
+  subject_area: Risk - Credit
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Control Variance Review 237
+  subject_area: Risk - Operational
+  target_dataset: Risk
+  status: migrated
+  owner: Risk Data Owner
+  priority: Low
+  validation_status: passed
+- name: Exception Queue 238
+  subject_area: Operations - Inventory
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: High
+  validation_status: passed
+- name: Regional Performance 239
+  subject_area: Operations - Shipping
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Medium
+  validation_status: passed
+- name: Backlog Aging 240
+  subject_area: Operations - Quality
+  target_dataset: Operations
+  status: migrated
+  owner: Operations Data Owner
+  priority: Low
+  validation_status: passed_with_notes
+  notes: Count variance 1.8% due to hardcoded date filter in OBIEE.
