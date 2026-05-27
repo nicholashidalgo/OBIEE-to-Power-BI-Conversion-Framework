@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nicholasjh-work.github.io/OBIEE-to-Power-BI-Conversion-Framework/">
+  <a href="http://obiee.nicholashidalgo.com">
     <img src="https://img.shields.io/badge/Demo-Live%20Dashboard-0078D4?style=for-the-badge&logo=powerbi&logoColor=white" alt="Live Dashboard">
   </a>
   <a href="LICENSE">
